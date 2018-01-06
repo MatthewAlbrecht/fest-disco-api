@@ -1,22 +1,25 @@
 const express = require('express')
-var mongoose = require ("mongoose"); // The reason for this demo.
+const mongoose = require ("mongoose"); // The reason for this demo.
 const path = require('path')
+const routes = require('./routes/index.js')
 require('dotenv').config()
 
 const PORT = process.env.PORT || 5000
 const dbURI = process.env.MONGODB_URI || undefined
 
-express()
-  .use(express.static(path.join(__dirname, 'public')))
-  .get('/', (req, res) => res.send('Hello World!'))
-  .listen(PORT, () => console.log(`Listening on ${ PORT }`))
+let app = express()
+   app.use(express.static(path.join(__dirname, 'public')))
+
+   app.use('/api/v1', routes)
+
+   app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
 var db = mongoose.createConnection(dbURI, { useMongoClient: true })
 
 db.on('connected', () => {
    console.log("++++ Mongoose CACHE connected to " + dbURI )
-   //setup schemas
    require('./schemas/index.js')(db)
+   //setup schemas
 })
 
 db.on('error', (err) => {
@@ -54,3 +57,5 @@ process.on('SIGTERM', () => {
       process.exit(0)
    })
 })
+
+module.exports = app
