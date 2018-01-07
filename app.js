@@ -1,61 +1,30 @@
 const express = require('express')
-const mongoose = require ("mongoose"); // The reason for this demo.
 const path = require('path')
-const routes = require('./routes/index.js')
+const bodyParser = require(`body-parser`);
+const logger = require(`morgan`);
 require('dotenv').config()
-
+require('./db.js')
 const PORT = process.env.PORT || 5000
-const dbURI = process.env.MONGODB_URI || undefined
+const app = express()
 
-let app = express()
-   app.use(express.static(path.join(__dirname, 'public')))
+app.use(function (req, res, next) {
+  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+  res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+  res.setHeader('Access-Control-Allow-Credentials', true);
 
-   app.use('/api/v1', routes)
-
-   app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
-
-var db = mongoose.createConnection(dbURI, { useMongoClient: true })
-
-db.on('connected', () => {
-   console.log("++++ Mongoose CACHE connected to " + dbURI )
-   require('./schemas/index.js')(db)
-   //setup schemas
+  next()
 })
 
-db.on('error', (err) => {
-   console.log("XXXX Mongoose CACHE connection error " + err)
-})
+app.use(logger(`dev`));
+app.use('/', express.static(__dirname))
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
 
-db.on('disconnected', () => {
-   console.log("XXXX Mongoose CACHE disconnected to " + dbURI )
-})
+const routes = require('./routes/index.js')
+app.use('/api/v1', routes)
 
-let gracefulShutdown = (msg, callback) => {
-   db.close(() => {
-      console.log("XXXX Mongoose CACHE disconnected through " + msg);
-      callback()
-   })
-}
+app.listen(PORT, () => console.log(`Listening on ${ PORT }`))
 
-//for nodeman restarts
-process.once('SIGUSR2', () => {
-   gracefulShutdown('nodemon restart', () => {
-      process.kill(process.pid, 'SIGUSR2')
-   })
-})
-
-//for app termination
-process.on('SIGINT', () => {
-   gracefulShutdown('app termination', () => {
-      process.exit(0)
-   })
-})
-
-//for Heroku app termination
-process.on('SIGTERM', () => {
-   gracefulShutdown('Heroku app shutdown', () => {
-      process.exit(0)
-   })
-})
 
 module.exports = app
