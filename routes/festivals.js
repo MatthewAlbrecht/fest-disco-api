@@ -58,7 +58,7 @@ router.post('/', logger, (req, res, next) => {
    }
 })
 
-router.put('/', logger, (req, res, next) => {
+router.put('/', logger, async (req, res, next) => {
    let { id, access_token } = req.body
    db.models.festivals.findById(id, (err, festival) => {
       if (err) {
@@ -67,32 +67,32 @@ router.put('/', logger, (req, res, next) => {
       if (!festival) {
          return _errorUtils.handleError(req, res, `No festival with id: ${id}`, err)
       }
-      // console.log("festival ===> ", festival)
       let { artists } = festival
-      artists = artists.map((artist, i) => artist.name)
-      console.log("\n\n\n\nARTISTS LENGTH BEFORE ===>", artists.LENGTH, '<===\n\n\n\n')
-      let artistsToSaveArray = []
-      // console.log("artists ===> ", artists)
-      let artistSearchPromisesArray = []
       if (artists) {
          artists.forEach((artist, i) => {
-            if (true) {
-               artistSearchPromisesArray.push(createArtistSearchPromise(artist, access_token))
+            // if (true) {
+            if (!artist.spotify_id && !artist._id) {
+               db.models.artists.find({name: artist.name})
+                  .exec((artistFindErr, foundArtist) => {
+                     if (artistFindErr) {
+                        return _errorUtils.handleError(req, res, 'MongoDB Error finding artist by name', err)
+                     }
+                     if (foundArtist.length > 0) {
+                        replaceArtistObject(artist, foundArtist[0])
+                     } else {
+                        let artistSearchPromise = createArtistSearchPromise(artist, access_token)
+                        makeSearchRequest(req, res, artistSearchPromise, artist, i)
+                     }
+                  })
             }
          })
-         artistSearchPromisesArray.forEach((artistSearchPromise, i) => {
-
-            makeSearchRequest(req, res, artistSearchPromise, artists, artistsToSaveArray, i)
-
-         })
          setTimeout(()=> {
-            console.log("artistsToSaveArray ===> ", artistsToSaveArray)
-            festival.set({artists: artistsToSaveArray})
+            console.log("artists ===> ", artists)
+            festival.set({artists: artists})
             festival.save((err, updatedFestival) => {
                if (err) {
                   return _errorUtils.handleError(req, res, 'MongoDB Error updating festival lineup', err)
                }
-               console.log("\n\n\n\nARTISTS LENGTH After ===>", artistsToSaveArray.length, '<===\n\n\n\n')
                return _successUtils.handleSuccess(req, res, 'Successfully updated artist info', updatedFestival)
             })
          }, 10000)
@@ -108,7 +108,7 @@ const createArtistSearchPromise = (artist, access_token) => {
          Authorization: 'Bearer ' + access_token
       },
       qs: {
-         q: artist,
+         q: artist.name,
          type: 'artist',
          limit: 3
       }
@@ -130,7 +130,7 @@ const buildArtistObject = (artist) => {
    }
 }
 
-const makeSearchRequest = (req, res, artistSearchPromise, artists, artistsToSaveArray, i) => {
+const makeSearchRequest = (req, res, artistSearchPromise, artist, i) => {
    artistSearchPromise
       .then((searchResults) => {
          searchResults = JSON.parse(searchResults)
@@ -144,29 +144,32 @@ const makeSearchRequest = (req, res, artistSearchPromise, artists, artistsToSave
                   return _errorUtils.handleErrorNoRes(req, res, 'MongoDB Error finding artist by id', err)
                }
                if (foundArtist.length > 0) {
-                  console.log("foundArtist[0] ===> ", foundArtist[0])
-                  artistsToSaveArray.push({spotify_id: foundArtist[0].spotify_id , _id: foundArtist[0]._id, name: foundArtist[0].name})
-                  // TODO: push the id to
+                  // console.log("foundArtist[0] ===> ", foundArtist[0])
+                  replaceArtistObject(artist, foundArtist[0])
                } else {
                   db.models.artists.create(artistObject, (createArtistError, createdArtist) => {
                      if (createArtistError) {
                         return _errorUtils.handleErrorNoRes(req, res, 'MongoDB Error saving artist', err)
                      }
-                     console.log("createdArtist ===> ", createdArtist)
-                     artistsToSaveArray.push({spotify_id: createdArtist.spotify_id , _id: createdArtist._id, name: createdArtist.name})
+                     // console.log("createdArtist ===> ", createdArtist)
+                     replaceArtistObject(artist, createdArtist)
                   })
                }
             })
          } else {
-            console.log("-- NO SEARCH RESULTS FOR", artists[i])
-            artistsToSaveArray.push({spotify_id: null, _id: null, name: artists[i]})
+            // console.log("-- NO SEARCH RESULTS FOR", artists[i])
             return _errorUtils.handleErrorNoRes(req, res, `Spotify search returns no results ${artists[i]}`, null)
          }
 
       })
       .catch((searchError) => {
-         console.log("searchError ===> ", searchError)
          return _errorUtils.handleErrorNoRes(req, res, 'Error searching Spotify for artist name', searchError)
       })
+}
+
+const replaceArtistObject = (artist, artistFromDB) => {
+   artist.spotify_id = artistFromDB.spotify_id
+   artist._id = artistFromDB._id
+   artist.name = artistFromDB.name
 }
 module.exports = router
