@@ -5,7 +5,7 @@ var db = mongoose.createConnection(dbURI, {})
 
 db.on('connected', () => {
    console.log("++++ Mongoose CACHE connected to " + dbURI )
-   require('./schemas/index.js')(db)
+   require('./schemas/index.js')
    //setup schemas
 })
 
