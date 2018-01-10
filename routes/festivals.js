@@ -37,6 +37,32 @@ router.get('/:name/:year', logger, (req, res, next) => {
    }
 })
 
+router.get('/:name/:year/genres', logger, (req, res, next) => {
+   let { name, year } = req.params
+   if (name && year) {
+      db.models.festivals.find({name, year})
+      .populate({path: 'artists._id', model: Artist, select: "genres name"})
+      .exec((err, festival) => {
+         if (err) {
+            return _errorUtils.handleError(req, res, 'MongoDB Error finding festival', err)
+         }
+         if (festival.length < 1) {
+            return _errorUtils.handleError(req, res, 'No matching festival found', err)
+         }
+         let genres = festival[0].artists.map((artist, i) => {
+            return {
+               name: artist.name,
+               genres: artist._id ? artist._id.genres : []
+            }
+         })
+         return _successUtils.handleSuccess(req, res, 'Successfully found festival', genres)
+      })
+
+   } else {
+      return _errorUtils.handleError(req, res, 'Missing params for search', null)
+   }
+})
+
 router.post('/', logger, (req, res, next) => {
    let { artists, name, year } = req.body
    artists = JSON.parse(artists)
