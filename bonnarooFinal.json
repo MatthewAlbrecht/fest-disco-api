@@ -1,0 +1,796 @@
+[
+   {
+      "festivalId": "5a555f1402e7af1d9c76008e",
+      "name": "Rock",
+      "artists": [
+         {
+             "spotify_id": "0C0XlULifJtAgn6ZNCW2eu",
+             "_id": "5a555f6002e7af1d9c76009c",
+             "name": "The Killers"
+         },
+         {
+             "spotify_id": "12Chz98pHFMPJEknJQMWvI",
+             "_id": "5a555f6002e7af1d9c7600a0",
+             "name": "Muse"
+         },
+         {
+             "spotify_id": "74XFHRwlV6OrjEM0A2NCMF",
+             "_id": "5a555f6002e7af1d9c7600a4",
+             "name": "Paramore"
+         },
+         {
+             "spotify_id": "5DK8eK7fjvRsziXzyr3sFA",
+             "_id": "5a555f6002e7af1d9c7600bd",
+             "name": "Moon Taxi"
+         },
+         {
+             "spotify_id": "5wFXmYsg3KFJ8BDsQudJ4f",
+             "_id": "5a555f6002e7af1d9c7600d2",
+             "name": "Manchester Orchestra"
+         },
+         {
+             "spotify_id": "3j4FHbC5zwmYGJ7r0ZgaMt",
+             "_id": "5a555f6002e7af1d9c760205",
+             "name": "Lissie"
+         },
+         {
+             "spotify_id": "5kdYrM3h2sB1Eid5tDf6Hk",
+             "_id": "5a555f6002e7af1d9c760211",
+             "name": "Alex Lahey"
+         },
+         {
+             "spotify_id": "4rfE3kN2zKNC9L9tt3iVOg",
+             "_id": "5a53089d8854d452a52d9ed4",
+             "name": "Ron Gallo"
+         },
+         {
+             "spotify_id": "1FgsVeOhRYuSw2ghkIXV0A",
+             "_id": "5a555f6002e7af1d9c7601fd",
+             "name": "DREAMERS"
+         },
+         {
+             "spotify_id": "67WNUxmM7y4WzHPAVzBu3E",
+             "_id": "5a52f8eefe63c14f12299777",
+             "name": "The Regrettes"
+         },
+         {
+             "spotify_id": "7d10VF1J4LqW7vrpPOngzm",
+             "_id": "5a555f6002e7af1d9c7601c4",
+             "name": "Larkin Poe"
+         },
+         {
+             "spotify_id": "0PEqo7RkX5wkaYwlT6hINn",
+             "_id": "5a555f6002e7af1d9c7601d1",
+             "name": "*repeat repeat"
+         },
+         {
+             "spotify_id": "4taNHtYxfIWIHu07FBw7ih",
+             "_id": "5a555f6002e7af1d9c760131",
+             "name": "Low Cut Connie"
+         },
+         {
+             "spotify_id": "7gHscNMDI8FF8pcgrV8eIn",
+             "_id": "5a555f6002e7af1d9c760139",
+             "name": "Matt Maeson"
+         }
+      ]
+   },
+   {
+      "festivalId": "5a555f1402e7af1d9c76008e",
+      "name": "Indie",
+      "artists": [
+         {
+             "spotify_id": "4LEiUm1SRbFMgfqnQTwUbQ",
+             "_id": "5a555f6002e7af1d9c760093",
+             "name": "Bon Iver"
+         },
+         {
+             "spotify_id": "3XHO7cRUPCLOr6jwp8vsx5",
+             "_id": "5a52e436ca4b7b4b453f8133",
+             "name": "alt-J"
+         },
+         {
+             "spotify_id": "39vA9YljbnOApXKniLWBZv",
+             "_id": "5a52d7278c44af489445e677",
+             "name": "Sylvan Esso"
+         },
+         {
+             "spotify_id": "7lOJ7WXyopaxri0dbOiZkd",
+             "_id": "5a555f6002e7af1d9c760118",
+             "name": "Broken Social Scene"
+         },
+         {
+             "spotify_id": "21egYD1eInY6bGFcniCRT1",
+             "_id": "5a52e436ca4b7b4b453f817e",
+             "name": "First Aid Kit"
+         },
+         {
+             "spotify_id": "6qqNVTkY8uBg9cP3Jd7DAH",
+             "_id": "5a52d7278c44af489445e6ab",
+             "name": "Billie Eilish"
+         },
+         {
+             "spotify_id": "3DFoVPonoAAt4EZ1FEI8ue",
+             "_id": "5a53089d8854d452a52d9e9e",
+             "name": "Sir Sly"
+         },
+         {
+             "spotify_id": "5W10uJRsbt9bROJDKoI1Wn",
+             "_id": "5a52e436ca4b7b4b453f8295",
+             "name": "Moses Sumney"
+         },
+         {
+             "spotify_id": "7MoIc5s9KXolCBH1fy9kkw",
+             "_id": "5a52e436ca4b7b4b453f8239",
+             "name": "Japanese Breakfast"
+         },
+         {
+             "spotify_id": "4skJp5OKvcc9eKokiuhi2s",
+             "_id": "5a555f6002e7af1d9c76020d",
+             "name": "Pond"
+         },
+         {
+             "spotify_id": "1HOeqtP7tHkKNJNLzQ2tnr",
+             "_id": "5a555f6002e7af1d9c76014a",
+             "name": "Everything Everything"
+         },
+         {
+             "spotify_id": "7xEFii6utZmQ61kX59HmLH",
+             "_id": "5a555f6002e7af1d9c76017f",
+             "name": "FRENSHIP"
+         },
+         {
+             "spotify_id": "1buzCmyYZE4kcdLRudsb8V",
+             "_id": "5a52d7278c44af489445e701",
+             "name": "Mikky Ekko"
+         },
+         {
+             "spotify_id": "6Bllzm0olEwqGwPujaLiuA",
+             "_id": "5a555f6002e7af1d9c7601d5",
+             "name": "Arlie"
+         },
+         {
+             "spotify_id": "1B9SbgFtfWSlUvAd1y0AaA",
+             "_id": "5a555f6002e7af1d9c7601d9",
+             "name": "The Brummies"
+         },
+         {
+             "spotify_id": "3hSFS64223jyO9Ck66rLOf",
+             "_id": "5a555f6002e7af1d9c7601b0",
+             "name": "Okey Dokey"
+         },
+         {
+             "spotify_id": "6rqXNMsClfcGgr3LggF7xL",
+             "_id": "5a555f6002e7af1d9c760231",
+             "name": "shey baba"
+         },
+         {
+             "spotify_id": "4iaDWP59Z3e62DW7YWDbIE",
+             "_id": "5a555f6002e7af1d9c7601e5",
+             "name": "Post Animal"
+         },
+         {
+             "spotify_id": "39kjdm4oUJo40vZgcetOGV",
+             "_id": "5a555f6002e7af1d9c7601f5",
+             "name": "Saro"
+         },
+         {
+             "spotify_id": "0szWPxzzE8DVEfXFRCLBUb",
+             "_id": "5a555f6002e7af1d9c760146",
+             "name": "Flor"
+         },
+         {
+             "spotify_id": "5VaeeaBg17hXKwwpGLdiqf",
+             "_id": "5a555f6002e7af1d9c760152",
+             "name": "Hundred Handed"
+         }
+      ]
+   },
+   {
+      "festivalId": "5a555f1402e7af1d9c76008e",
+      "name": "Country/Americana",
+      "artists": [
+         {
+             "spotify_id": "3vDpQbGnzRbRVirXlfQagB",
+             "_id": "5a555f6002e7af1d9c76008f",
+             "name": "Sturgill Simpson"
+         },
+         {
+             "spotify_id": "4TKTii6gnOnUXQHyuo9JaD",
+             "_id": "5a555f6002e7af1d9c760163",
+             "name": "Sheryl Crow"
+         },
+         {
+             "spotify_id": "5kuJibJcwOC53s3OkoGMRA",
+             "_id": "5a555f6002e7af1d9c7600fe",
+             "name": "The Revivalists"
+         },
+         {
+             "spotify_id": "4DBi4EYXgiqbkxvWUXUzMi",
+             "_id": "5a555f6002e7af1d9c7600c6",
+             "name": "Old Crow Medicine Show"
+         },
+         {
+             "spotify_id": "39u0hc2Wv6WlGiFvMiolY3",
+             "_id": "5a555f6002e7af1d9c76011c",
+             "name": "Ghosts of the Grand Ole Opry"
+         },
+         {
+             "spotify_id": "39NR3AUhpbbqKM33vWn2fp",
+             "_id": "5a555f6002e7af1d9c760114",
+             "name": "Brothers Osborne"
+         },
+         {
+             "spotify_id": "13ZEDW6vyBF12HYcZRr4EV",
+             "_id": "5a555f6002e7af1d9c7600de",
+             "name": "Tyler Childers"
+         },
+         {
+             "spotify_id": "1DTZRmlVZBxx2wRQBtx6yi",
+             "_id": "5a555f6002e7af1d9c760121",
+             "name": "Midland"
+         },
+         {
+             "spotify_id": null,
+             "_id": null,
+             "name": "Durand Jones &amp; The Indications"
+         },
+         {
+            "spotify_id": "4TKZQfojfl4wUDO3Mql65t",
+             "_id": "5a555f6002e7af1d9c7601e9",
+             "name": "Blank Range"
+         },
+         {
+             "spotify_id": "6HhV0jtMMK5HYnYgG0xgtz",
+             "_id": "5a555f6002e7af1d9c760173",
+             "name": "The War and Treaty"
+         },
+         {
+             "spotify_id": "6vRqjrYlvurWLEwRKvTdEw",
+             "_id": "5a555f6002e7af1d9c760229",
+             "name": "Chastity Brown"
+         },
+         {
+             "spotify_id": "6EuVxyAGrWCKJtj5pRSHaw",
+             "_id": "5a555f6002e7af1d9c76018f",
+             "name": "The Texas Gentlemen"
+         },
+         {
+             "spotify_id": "4HfoncnCuBS7D4xU4VDosQ",
+             "_id": "5a52d7278c44af489445e6fd",
+             "name": "Southern Avenue"
+         },
+         {
+             "spotify_id": "5VPCIIfZPK8KPsgz4jmOEC",
+             "_id": "5a555f6002e7af1d9c7601a8",
+             "name": "The Blue Stones"
+         },
+         {
+             "spotify_id": "6X28JIfV57XfgqBpdAML7E",
+             "_id": "5a555f6002e7af1d9c7601c0",
+             "name": "Michigan Rattlers"
+         },
+         {
+             "spotify_id": "384YLF1kNQk9Ccl8pn7BSO",
+             "_id": "5a555f6002e7af1d9c760177",
+             "name": "Matt Holubowski"
+         },
+         {
+             "spotify_id": "3F4iXxXxe7iazo3Jnwucng",
+             "_id": "5a555f6102e7af1d9c760241",
+             "name": "Oliver Hazard"
+         },
+         {
+             "spotify_id": "7D8LuVnlyu91ndcPe70j7S",
+             "_id": "5a555f6002e7af1d9c760187",
+             "name": "Jade Bird"
+         },
+         {
+             "spotify_id": "6sijvTWaedetuV2MJF3YwU",
+             "_id": "5a55601c02e7af1d9c76024f",
+             "name": "Colin Macleod"
+         }
+      ]
+   },
+   {
+      "festivalId": "5a555f1402e7af1d9c76008e",
+      "name": "Soul/Blues",
+      "artists": [
+         {
+             "spotify_id": "4f9iBmdUOhQWeP7dcAn1pf",
+             "_id": "5a555f6002e7af1d9c7600ce",
+             "name": "Rag'n'Bone Man"
+         },
+         {
+             "spotify_id": "20wkVLutqVOYrc0kxFs7rA",
+             "_id": "5a52e436ca4b7b4b453f8176",
+             "name": "Daniel Caesar"
+         },
+         {
+             "spotify_id": "4fXkvh05wFhuH77MfD4m9o",
+             "_id": "5a555f6002e7af1d9c7600da",
+             "name": "St. Paul & The Broken Bones"
+         },
+         {
+             "spotify_id": "0cTSCsVx04SSht9V6cpKN0",
+             "_id": "5a555f6002e7af1d9c7600e2",
+             "name": "Mavis Staples"
+         },
+         {
+             "spotify_id": "7JBZN2pehWRUu3fX11lP2y",
+             "_id": "5a555f6002e7af1d9c76018b",
+             "name": "R.LUM.R"
+         },
+         {
+             "spotify_id": "3nIzSJRQzH8v2DFs7iaXDi",
+             "_id": "5a555f6002e7af1d9c760135",
+             "name": "The Spencer Lee Band"
+         },
+         {
+             "spotify_id": "0hDjKSKjl1DC7ovYTDJHe8",
+             "_id": "5a555f6002e7af1d9c7601dd",
+             "name": "Bruno Major"
+         },
+         {
+             "spotify_id": "2kEDso93O2hDgCbnuiSkkZ",
+             "_id": "5a555f6002e7af1d9c760183",
+             "name": "Jalen N'Gonda"
+         },
+         {
+             "spotify_id": "2YKEqXUkXI7yVEWqTCX8Fc",
+             "_id": "5a555f6002e7af1d9c76022d",
+             "name": "Zeshan B"
+         },
+         {
+             "spotify_id": "1IgHBEDUofWV0eNWlmhbBf",
+             "_id": "5a555f6002e7af1d9c76019c",
+             "name": "Colin Elmore & the Danville Train"
+         },
+         {
+             "spotify_id": "7A2x4Urpc4VKF1pb7qnNqD",
+             "_id": "5a555f6002e7af1d9c7601b8",
+             "name": "John Splithoff"
+         },
+         {
+             "spotify_id": "1o9c8sfXo2HKF95bWvPUbN",
+             "_id": "5a555f6002e7af1d9c760201",
+             "name": "W.G. Snuffy Walden"
+         }
+      ]
+   },
+   {
+      "festivalId": "5a555f1402e7af1d9c76008e",
+      "name": "Pop/R&B",
+      "artists": [
+         {
+             "spotify_id": "6LuN9FCkKOj5PcnpouEgny",
+             "_id": "5a52d14229cabd475ff2fdbf",
+             "name": "Khalid"
+         },
+         {
+             "spotify_id": "6M2wZ9GZgrQXHCFfjv46we",
+             "_id": "5a555f6002e7af1d9c760125",
+             "name": "Dua Lipa"
+         },
+         {
+             "spotify_id": "3aQeKQSyrW4qWr35idm0cy",
+             "_id": "5a555f6002e7af1d9c7600d6",
+             "name": "T-Pain"
+         },
+         {
+             "spotify_id": "1U1el3k54VvEUzo3ybLPlM",
+             "_id": "5a52e436ca4b7b4b453f823d",
+             "name": "Kali Uchis"
+         },
+         {
+             "spotify_id": "7hOGhpa8RMSuDOWntGIAJt",
+             "_id": "5a555f6002e7af1d9c7600ee",
+             "name": "A R I Z O N A"
+         },
+         {
+             "spotify_id": "49tQo2QULno7gxHutgccqF",
+             "_id": "5a52e436ca4b7b4b453f8284",
+             "name": "LANY"
+         },
+         {
+             "spotify_id": "3KedxarmBCyFBevnqQHy3P",
+             "_id": "5a555f6002e7af1d9c7601c8",
+             "name": "Jessie Reyez"
+         },
+         {
+             "spotify_id": "49O0SPoCoTiK2Nn2tOaHyU",
+             "_id": "5a52e436ca4b7b4b453f81ed",
+             "name": "Knox Fortune"
+         },
+         {
+             "spotify_id": "4GNC7GD6oZMSxPGyXy4MNB",
+             "_id": "5a555f6002e7af1d9c7601a4",
+             "name": "Lewis Capaldi"
+         },
+         {
+             "spotify_id": "5YZ5AExR68U3ZblH6HcO6B",
+             "_id": "5a555f6002e7af1d9c760225",
+             "name": "Leven Kali"
+         },
+         {
+             "spotify_id": "4GvEc3ANtPPjt1ZJllr5Zl",
+             "_id": "5a555f6002e7af1d9c760219",
+             "name": "Bazzi"
+         },
+         {
+             "spotify_id": "0lPhSdyfILTWuDUWJRyAk7",
+             "_id": "5a555f6002e7af1d9c76016b",
+             "name": "Cyn"
+         },
+         {
+             "spotify_id": "0tRFWXqKBBQcu5oFVOgVzX",
+             "_id": "5a555f6102e7af1d9c760235",
+             "name": "Jaira Burns"
+         },
+         {
+             "spotify_id": "7cYEt1pqMgXJdq00hAwVpT",
+             "_id": "5a555f6002e7af1d9c76015b",
+             "name": "Chase Atlantic"
+         },
+         {
+             "spotify_id": "4T8NIfZmVY6TJFqVzN6X49",
+             "_id": "5a555f6002e7af1d9c76016f",
+             "name": "Tobi Lou"
+         },
+         {
+             "spotify_id": "5qfkUSH3ip5dD2eEPhjkT3",
+             "_id": "5a555f6002e7af1d9c7601f9",
+             "name": "Kyle Dion"
+         },
+         {
+             "spotify_id": "5qa31A9HySw3T7MKWI9bGg",
+             "_id": "5a555f6002e7af1d9c760209",
+             "name": "FLETCHER"
+         },
+         {
+             "spotify_id": "4dI7obVTFWgW4kL5yUkL7f",
+             "_id": "5a555f6002e7af1d9c760198",
+             "name": "Biyo"
+         },
+         {
+             "spotify_id": "3LtkIxt8EHLpuXMOpFYZ06",
+             "_id": "5a555f6102e7af1d9c76023d",
+             "name": "Davie"
+         }
+      ]
+   },
+   {
+      "festivalId": "5a555f1402e7af1d9c76008e",
+      "name": "Hip-Hop",
+      "artists": [
+         {
+             "spotify_id": "7dGJo4pcD2V6oG8kP0tJRR",
+             "_id": "5a52e434ca4b7b4b453f810f",
+             "name": "Eminem"
+         },
+         {
+             "spotify_id": "1RyvyyTE3xzB2ZywiAwp0i",
+             "_id": "5a555f6002e7af1d9c7600a8",
+             "name": "Future"
+         },
+         {
+             "spotify_id": "3jK9MiCrA42lLAdMGUZpwa",
+             "_id": "5a55601c02e7af1d9c76024a",
+             "name": "Anderson .Paak"
+         },
+         {
+             "spotify_id": "1Bl6wpkWCQ4KVgnASpvzzA",
+             "_id": "5a52e436ca4b7b4b453f8193",
+             "name": "BROCKHAMPTON"
+         },
+         {
+             "spotify_id": "699OTQXzgjhIYAHMy9RyPD",
+             "_id": "5a555f6002e7af1d9c7600f6",
+             "name": "Playboi Carti"
+         },
+         {
+             "spotify_id": "2IDLDx25HU1nQMKde4n61a",
+             "_id": "5a555f6002e7af1d9c7600f2",
+             "name": "Rich Brian"
+         },
+         {
+             "spotify_id": "6fxyWrfmjcbj5d12gXeiNV",
+             "_id": "5a52d7278c44af489445e6a7",
+             "name": "Denzel Curry"
+         },
+         {
+             "spotify_id": null,
+             "_id": null,
+             "name": "Westside Gunn & Conway"
+         },
+         {
+             "spotify_id": "6I3MElirhT5t6Kf7p0hGk9",
+             "_id": "5a555f6002e7af1d9c76021d",
+             "name": "Duckwrth"
+         },
+         {
+             "spotify_id": "76bAuLD5jMIT1YDJ84KB8l",
+             "_id": "5a555f6002e7af1d9c760156",
+             "name": "Topaz Jones"
+         },
+         {
+             "spotify_id": "5BhvG9bggFHpnuUkl5SnKw",
+             "_id": "5a555f6002e7af1d9c7601bc",
+             "name": "Michael Blume"
+         }
+      ]
+   },
+   {
+      "festivalId": "5a555f1402e7af1d9c76008e",
+      "name": "Electronic",
+      "artists": [
+         {
+             "spotify_id": "1JPy5PsJtkhftfdr6saN2i",
+             "_id": "5a52d14229cabd475ff2fdbb",
+             "name": "Bassnectar"
+         },
+         {
+             "spotify_id": "6TQj5BFPooTa08A7pk8AQ1",
+             "_id": "5a555f6002e7af1d9c760097",
+             "name": "Kaskade"
+         },
+         {
+             "spotify_id": "0F52YLV7uWqaJfMMDgG737",
+             "_id": "5a555f6002e7af1d9c7600b5",
+             "name": "Virtual Self"
+         },
+         {
+             "spotify_id": "6tHs9gFIpD0hCVto83sirH",
+             "_id": "5a555f6002e7af1d9c7600ac",
+             "name": "RÜFÜS DU SOL"
+         },
+         {
+             "spotify_id": "11gWrKZMBsGQWmobv3oNfW",
+             "_id": "5a52e435ca4b7b4b453f811b",
+             "name": "Alison Wonderland"
+         },
+         {
+             "spotify_id": "7CCjtD0hCK005Bvg2WG1a7",
+             "_id": "5a555f6002e7af1d9c7600b1",
+             "name": "Carnage"
+         },
+         {
+             "spotify_id": "3a9qv6NLHnsVxJUtKOMHvD",
+             "_id": "5a555f6002e7af1d9c76010f",
+             "name": "The Glitch Mob"
+         },
+         {
+             "spotify_id": "2ZRQcIgzPCVaT9XKhXZIzh",
+             "_id": "5a555f6002e7af1d9c760107",
+             "name": "Gryffin"
+         },
+         {
+             "spotify_id": "4AA8eXtzqh5ykxtafLaPOi",
+             "_id": "5a555f6002e7af1d9c7600fa",
+             "name": "What So Not"
+         },
+         {
+             "spotify_id": "72iCiKwu6nu6Qq9emIwzYv",
+             "_id": "5a555f6002e7af1d9c76011d",
+             "name": "Kayzo"
+         },
+         {
+             "spotify_id": "20DZAfCuP1TKZl5KcY7z3Q",
+             "_id": "5a555f6002e7af1d9c7600e6",
+             "name": "SLANDER"
+         },
+         {
+             "spotify_id": "4dM6NDYSfLcspt8GLoT5aE",
+             "_id": "5a555f6002e7af1d9c760102",
+             "name": "Hippie Sabotage"
+         },
+         {
+             "spotify_id": "0PxzGnCYBpSuaI49OR94cA",
+             "_id": "5a52d7278c44af489445e6f9",
+             "name": "Big Wild"
+         },
+         {
+             "spotify_id": "7Hr9bE0u9Rl5n6QahVNRnc",
+             "_id": "5a555f6002e7af1d9c76010b",
+             "name": "Shiba San"
+         },
+         {
+             "spotify_id": "2FwJwEswyIUAljqgjNSHgP",
+             "_id": "5a53089d8854d452a52d9eb3",
+             "name": "Snakehips"
+         },
+         {
+             "spotify_id": "4OHaWpWPKDcZgOOUn9elFn",
+             "_id": "5a555f6002e7af1d9c76014e",
+             "name": "Mr. Carmack"
+         },
+         {
+             "spotify_id": "0deIjoDjl9g9Zpw0sCIOHh",
+             "_id": "5a555f6002e7af1d9c760221",
+             "name": "Valentino Khan"
+         },
+         {
+             "spotify_id": "69Fy7EM9qAFPdKSKLFU66b",
+             "_id": "5a52d7278c44af489445e5fd",
+             "name": "Opiuo"
+         },
+         {
+             "spotify_id": "714O3xvBNiclo82vxBn8Bf",
+             "_id": "5a555f6002e7af1d9c760215",
+             "name": "k?d"
+         },
+         {
+             "spotify_id": "5Igpc9iLZ3YGtKeYfSrrOE",
+             "_id": "5a555f6102e7af1d9c760239",
+             "name": "Chris Lake"
+         },
+         {
+             "spotify_id": "4vOWtH59x00IhY805tdf74",
+             "_id": "5a555f6002e7af1d9c760194",
+             "name": "Billy Kenny"
+         },
+         {
+             "spotify_id": "1NpKmfDYMhw1KJIIUCsX4O",
+             "_id": "5a555f6002e7af1d9c7601a0",
+             "name": "Mija"
+         },
+         {
+             "spotify_id": "5AoXSiM511L4To0AN5oZVB",
+             "_id": "5a555f6002e7af1d9c7601cc",
+             "name": "Space Jesus"
+         },
+         {
+             "spotify_id": "2xx0ChFyXa0a4S48GAXFUz",
+             "_id": "5a555f6002e7af1d9c76017b",
+             "name": "Manic Focus"
+         },
+         {
+             "spotify_id": "4zlw0jXUzd4dRcqI3Y1OiY",
+             "_id": "5a52d7278c44af489445e631",
+             "name": "Boogie T"
+         },
+         {
+             "spotify_id": "65nmT40cSSiee63gbSl2a0",
+             "_id": "5a52d7278c44af489445e659",
+             "name": "Squnto"
+         },
+         {
+             "spotify_id": "4LZ4De2MoO3lP6QaNCfvcu",
+             "_id": "5a555f6002e7af1d9c7601ac",
+             "name": "Said the Sky"
+         },
+         {
+             "spotify_id": "6wKxOKEA3K6R2UZ3COLXEY",
+             "_id": "5a52e436ca4b7b4b453f81a4",
+             "name": "Elohim"
+         },
+         {
+             "spotify_id": "7cae9Fkz2R1NDHWtdnaE8d",
+             "_id": "5a555f6002e7af1d9c760129",
+             "name": "Melvv"
+         },
+         {
+             "spotify_id": "0rQ0WMIrOt6MzfiGaNWh3D",
+             "_id": "5a555f6002e7af1d9c7601ed",
+             "name": "LOUDPVCK"
+         },
+         {
+             "spotify_id": "1496XxkytEk26FUJLfpVZr",
+             "_id": "5a52d7278c44af489445e68f",
+             "name": "CloZee"
+         },
+         {
+             "spotify_id": "0u18Cq5stIQLUoIaULzDmA",
+             "_id": "5a52d7278c44af489445e639",
+             "name": "DROELOE"
+         },
+         {
+             "spotify_id": "3XFcu2NnGWceLNdxRCfYH3",
+             "_id": "5a555f6002e7af1d9c7601b4",
+             "name": "Taska Black"
+         },
+         {
+             "spotify_id": null,
+             "_id": null,
+             "name": "Justin Jay’s Fantastic Voyage"
+         },
+         {
+             "spotify_id": "6BbqU3r1G2mwkRIfIbkCek",
+             "_id": "5a555f6002e7af1d9c76012d",
+             "name": "Bayonne"
+         }
+      ]
+   },
+   {
+      "festivalId": "5a555f1402e7af1d9c76008e",
+      "name": "Funk/Jazz",
+      "artists": [
+         {
+             "spotify_id": "0Xf8oDAJYd2D0k3NLI19OV",
+             "_id": "5a555f6002e7af1d9c7600c1",
+             "name": "CHIC"
+         },
+         {
+             "spotify_id": "2mV8aJphiSHYJf43DxL7Gt",
+             "_id": "5a52e436ca4b7b4b453f81e5",
+             "name": "Chromeo"
+         },
+         {
+             "spotify_id": "59oA5WbbQvomJz2BuRG071",
+             "_id": "5a52e436ca4b7b4b453f820d",
+             "name": "Jungle"
+         },
+         {
+             "spotify_id": null,
+             "_id": null,
+             "name": "Trombone Shorty & Orleans Avenue"
+         },
+         {
+             "spotify_id": "4frXpPxQQZwbCu3eTGnZEw",
+             "_id": "5a555f6002e7af1d9c7600ca",
+             "name": "Thundercat"
+         },
+         {
+             "spotify_id": "19f2JXwlRU26376TCKmp6L",
+             "_id": "5a555f6002e7af1d9c760142",
+             "name": "GoGo Penguin"
+         },
+         {
+             "spotify_id": "5ABBZoXY5r0UL1txACjinb",
+             "_id": "5a555f6002e7af1d9c76013d",
+             "name": "Ikebe Shakedown"
+         },
+         {
+             "spotify_id": "6miuYP0AovZaaKpRFaDQMQ",
+             "_id": "5a555f6002e7af1d9c7600ea",
+             "name": "Spencer Ludwig"
+         },
+         {
+             "spotify_id": "13CMfEeq8AC6ryGOPODqE1",
+             "_id": "5a555f6102e7af1d9c760245",
+             "name": "A Winged Victory for the Sullen"
+         }
+      ]
+   },
+   {
+      "festivalId": "5a555f1402e7af1d9c76008e",
+      "name": "Jam/Reggage/World",
+      "artists": [
+         {
+             "spotify_id": "2WjvvwAX0mdWwq3aFuUdtc",
+             "_id": "5a555f6002e7af1d9c7600b9",
+             "name": "Rebelution"
+         },
+         {
+             "spotify_id": "1eZ4td9oadjw7GkW0LzxNK",
+             "_id": "5a52d7278c44af489445e6bb",
+             "name": "STS9"
+         },
+         {
+             "spotify_id": "6zVFRTB0Y1whWyH7ZNmywf",
+             "_id": "5a52e436ca4b7b4b453f8201",
+             "name": "Tash Sultana"
+         },
+         {
+             "spotify_id": "3KH7WsR2JZQ94Ik8SyabU6",
+             "_id": "5a555f6002e7af1d9c76015f",
+             "name": "Amadou & Mariam"
+         },
+         {
+             "spotify_id": "2HnmTIZBaC6upua76nuGIY",
+             "_id": "5a555f6002e7af1d9c760167",
+             "name": "Noura Mint Seymali"
+         },
+         {
+             "spotify_id": "52NOvMXEjgf8MQl0qop2dl",
+             "_id": "5a555f6002e7af1d9c7601e1",
+             "name": "Pigeons Playing Ping Pong"
+         },
+         {
+             "spotify_id": "7fA0IDinGo27lmOeGy6oGV",
+             "_id": "5a555f6002e7af1d9c7601f1",
+             "name": "Spafford"
+         }
+      ]
+   }
+]

@@ -32,9 +32,9 @@ let artistSchema = new Schema({
 })
 
 let festivalGroupingsSchema = new Schema({
-   fesitvalId: Schema.Types.ObjectId,
+   festivalId: Schema.Types.ObjectId,
    name: String,
-   artists: [Schema.Types.ObjectId],
+   artists: [lineupArtistSchema],
 })
 
 let userSchema = new Schema({

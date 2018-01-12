@@ -17,10 +17,10 @@ router.get('/', logger, (req, res, next) => {
       })
 })
 
-router.get('/:name/:year', logger, (req, res, next) => {
-   let { name, year } = req.params
-   if (name && year) {
-      db.models.festivals.find({name, year})
+router.get('/:id', logger, (req, res, next) => {
+   let { id } = req.params
+   if (id) {
+      db.models.festivals.find({ _id: id })
       .populate({path: 'artists._id', model: Artist})
       .exec((err, festival) => {
          if (err) {
@@ -37,10 +37,10 @@ router.get('/:name/:year', logger, (req, res, next) => {
    }
 })
 
-router.get('/:name/:year/genres', logger, (req, res, next) => {
-   let { name, year } = req.params
-   if (name && year) {
-      db.models.festivals.find({name, year})
+router.get('/:id/genres', logger, (req, res, next) => {
+   let { id } = req.params
+   if (id) {
+      db.models.festivals.find({ _id: id })
       .populate({path: 'artists._id', model: Artist, select: "genres name"})
       .exec((err, festival) => {
          if (err) {
