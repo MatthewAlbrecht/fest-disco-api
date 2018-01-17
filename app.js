@@ -8,12 +8,18 @@ const PORT = process.env.PORT || 5000
 const app = express()
 
 app.use(function (req, res, next) {
-  res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
-  res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
-  res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
-  res.setHeader('Access-Control-Allow-Credentials', true);
+   let allowedOrigins = ['http://localhost:3000', 'https://festdisco.herokuapp.com'];
+   var origin = req.headers.origin;
+   console.log("origin ===> ", origin)
+   if(allowedOrigins.indexOf(origin) > -1){
+      res.setHeader('Access-Control-Allow-Origin', origin);
+   }
+   // res.setHeader('Access-Control-Allow-Origin', 'http://localhost:3000');
+   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
+   res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+   res.setHeader('Access-Control-Allow-Credentials', true);
 
-  next()
+   next()
 })
 
 app.use(logger(`dev`));
