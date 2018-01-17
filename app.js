@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 5000
 const app = express()
 
 app.use(function (req, res, next) {
-   let allowedOrigins = ['http://localhost:3000', 'https://festdisco.herokuapp.com'];
+   let allowedOrigins = ['http://localhost:3000', 'https://festdisco.herokuapp.com', 'https://viibly.com'];
    var origin = req.headers.origin;
    console.log("origin ===> ", origin)
    if(allowedOrigins.indexOf(origin) > -1){
