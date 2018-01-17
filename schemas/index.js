@@ -19,6 +19,12 @@ let imageSchema = new Schema({
    width: Number
 })
 
+let trackSchema = new Schema({
+   id: String,
+   name: String,
+   uri: String
+})
+
 let artistSchema = new Schema({
    name: String,
    genres: [String],
@@ -28,7 +34,8 @@ let artistSchema = new Schema({
    uri: {type: String, required: false},
    followers: {type: Number, required: false},
    popularity: {type: Number, required: false},
-   images: [imageSchema]
+   images: [imageSchema],
+   top_tracks: [trackSchema]
 })
 
 let festivalGroupingsSchema = new Schema({

@@ -30,7 +30,7 @@ router.get('/:id', logger, (req, res) => {
    let { id } = req.params
    if (id) {
       db.models.festivalgroupings.find({ festivalId: id })
-         .populate({path: 'artists._id', model: Artist})
+         .populate({path: 'artists._id', model: Artist, select: "images.url top_tracks.uri"})
          .exec((err, foundFestivalGroupings) => {
             if (err) return _errorUtils.handleError(req, res, "Find FestivalGroupings failed", err);
             return _successUtils.handleSuccess(req, res, "Successfully found groupings", foundFestivalGroupings)

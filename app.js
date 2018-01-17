@@ -18,8 +18,9 @@ app.use(function (req, res, next) {
 
 app.use(logger(`dev`));
 app.use('/', express.static(__dirname))
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+// app.use(bodyParser({limit: '50mb'}));
+app.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
+app.use(bodyParser.json({limit: '500kb'}));
 
 const routes = require('./routes/index.js')
 app.use('/api/v1', routes)

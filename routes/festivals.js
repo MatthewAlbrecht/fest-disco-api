@@ -21,7 +21,7 @@ router.get('/:id', logger, (req, res, next) => {
    let { id } = req.params
    if (id) {
       db.models.festivals.find({ _id: id })
-      .populate({path: 'artists._id', model: Artist})
+      .populate({path: 'artists._id', model: Artist, select: "images"})
       .exec((err, festival) => {
          if (err) {
             return _errorUtils.handleError(req, res, 'MongoDB Error finding festival', err)
