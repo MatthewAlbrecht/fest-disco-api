@@ -8,7 +8,7 @@ const db = require('../db.js')
 
 router.post('/accessAndRefresh', logger, (req, res, next) => {
    let { code } = req.body
-   let accessAndRefreshOptions = createOptionsForAccessAndRefreshRequest(code)
+   let accessAndRefreshOptions = createOptionsForAccessAndRefreshRequest(code, req.headers.origin)
 
    rp(accessAndRefreshOptions)
       .then((response) => {
@@ -61,12 +61,12 @@ router.post('/accessAndRefresh', logger, (req, res, next) => {
 
 })
 
-const createOptionsForAccessAndRefreshRequest = (code) => {
-   console.log("req.Headers ===> ", req.headers.origin)
+const createOptionsForAccessAndRefreshRequest = (code, origin) => {
+   console.log("req.Headers ===> ", origin)
    let body = {
       grant_type: 'authorization_code',
       code: code,
-      redirect_uri: req.headers.origin + '/cb'
+      redirect_uri: origin + '/cb'
    }
    let options = {
       method: 'POST',
