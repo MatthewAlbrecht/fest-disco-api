@@ -62,10 +62,11 @@ router.post('/accessAndRefresh', logger, (req, res, next) => {
 })
 
 const createOptionsForAccessAndRefreshRequest = (code) => {
+   console.log("req.Headers ===> ", req.headers.origin)
    let body = {
       grant_type: 'authorization_code',
       code: code,
-      redirect_uri: 'http://localhost:3000/cb'
+      redirect_uri: req.headers.origin + '/cb'
    }
    let options = {
       method: 'POST',
